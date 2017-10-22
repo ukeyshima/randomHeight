@@ -11,7 +11,7 @@
     float floorDistFunc(vec3 p){
         vec3 q=p;
         q.xz=mod(p.xz,1.0)-0.5;
-        return boxDistFunc(q,vec3(0.4,abs(random(floor(p.xz)))+abs(sin(time*1.3*random(floor(p.xz)))),0.4),vec3(0.0,0.0,0.0));
+        return boxDistFunc(q,vec3(0.4,abs(random(floor(p.xz))),0.4),vec3(0.0,0.0,0.0));
     }
     float distFunc(vec3 p){
         return floorDistFunc(p);
